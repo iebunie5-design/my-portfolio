@@ -402,9 +402,6 @@ export default function Home() {
                   <span className="text-green-500 font-bold text-xs bg-green-50 dark:bg-green-950 px-1.5 py-0.5 rounded">N</span>
                   blog.naver.com/ideacube5
                 </a>
-                <a href={`https://${profile.contact.github}`} className="text-gray-600 dark:text-gray-400 hover:text-orange-500 transition-colors flex items-center gap-2">
-                  <span className="text-orange-400">⌥</span> {profile.contact.github}
-                </a>
               </div>
 
               {/* 문의 폼 */}
