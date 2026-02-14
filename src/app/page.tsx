@@ -155,7 +155,9 @@ export default function Home() {
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/80 dark:bg-gray-950/80 backdrop-blur-sm border-b border-gray-100 dark:border-gray-800 z-50 transition-colors duration-300">
         <div className="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
-          <span className="font-bold text-lg">{profile.name}</span>
+          <a href="#">
+            <Image src="/logo.png" alt={profile.name} width={140} height={40} className="h-9 w-auto object-contain" priority />
+          </a>
           <div className="flex items-center gap-5 text-sm text-gray-600 dark:text-gray-400">
             {navIds.map((id, i) => (
               <a key={id} href={`#${id}`} className="hover:text-orange-500 transition-colors">
@@ -452,8 +454,11 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-6 border-t border-gray-100 dark:border-gray-800 text-center text-sm text-gray-400 transition-colors duration-300">
-        © 2026 {profile.name} · Made with Next.js & Tailwind CSS
+      <footer className="py-8 px-6 border-t border-gray-100 dark:border-gray-800 transition-colors duration-300">
+        <div className="flex flex-col items-center gap-3">
+          <Image src="/logo.png" alt={profile.name} width={120} height={36} className="h-8 w-auto object-contain opacity-60" />
+          <p className="text-sm text-gray-400">© 2026 {profile.name} · Made with Next.js & Tailwind CSS</p>
+        </div>
       </footer>
     </main>
   );
