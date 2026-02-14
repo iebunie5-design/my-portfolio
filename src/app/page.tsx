@@ -14,6 +14,7 @@ const t = {
     viewProjects: "프로젝트 보기",
     contact: "연락하기",
     inquiry: "수강 문의하기",
+    kakao: "카카오톡 상담",
     sections: ["소개", "강의 경력", "기술 스택", "프로젝트", "연락처"],
     form: {
       name: "이름",
@@ -36,6 +37,7 @@ const t = {
     viewProjects: "View Projects",
     contact: "Contact Me",
     inquiry: "Inquire Now",
+    kakao: "KakaoTalk Chat",
     sections: ["About Me", "Teaching", "Skills", "Projects", "Contact"],
     form: {
       name: "Name",
@@ -209,6 +211,17 @@ export default function Home() {
               <a href="#contact" className="bg-orange-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-orange-600 transition-colors shadow-md shadow-orange-200 dark:shadow-orange-900">
                 {tx.inquiry}
               </a>
+              <a
+                href={profile.contact.kakao}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-[#FEE500] text-[#3A1D1D] px-6 py-3 rounded-lg font-medium hover:bg-yellow-400 transition-colors"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 3C6.477 3 2 6.477 2 10.8c0 2.7 1.65 5.08 4.15 6.52l-1.06 3.93a.3.3 0 0 0 .44.33l4.6-3.06c.61.08 1.24.13 1.87.13 5.523 0 10-3.477 10-7.8C22 6.477 17.523 3 12 3z"/>
+                </svg>
+                {tx.kakao}
+              </a>
               <a href="#projects" className="border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 px-6 py-3 rounded-lg font-medium hover:border-orange-300 hover:text-orange-500 transition-colors">
                 {tx.viewProjects}
               </a>
@@ -362,6 +375,17 @@ export default function Home() {
                 </p>
                 <a href={`mailto:${profile.contact.email}`} className="text-gray-600 dark:text-gray-400 hover:text-orange-500 transition-colors flex items-center gap-2">
                   <span className="text-orange-400">✉</span> {profile.contact.email}
+                </a>
+                <a
+                  href={profile.contact.kakao}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-[#FEE500] text-[#3A1D1D] px-4 py-2.5 rounded-lg font-medium hover:bg-yellow-400 transition-colors w-fit"
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 3C6.477 3 2 6.477 2 10.8c0 2.7 1.65 5.08 4.15 6.52l-1.06 3.93a.3.3 0 0 0 .44.33l4.6-3.06c.61.08 1.24.13 1.87.13 5.523 0 10-3.477 10-7.8C22 6.477 17.523 3 12 3z"/>
+                  </svg>
+                  {tx.kakao}
                 </a>
                 <a href={`https://${profile.contact.github}`} className="text-gray-600 dark:text-gray-400 hover:text-orange-500 transition-colors flex items-center gap-2">
                   <span className="text-orange-400">⌥</span> {profile.contact.github}
