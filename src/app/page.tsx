@@ -378,6 +378,10 @@ export default function Home() {
                 <a href={`mailto:${profile.contact.email}`} className="text-gray-600 dark:text-gray-400 hover:text-orange-500 transition-colors flex items-center gap-2">
                   <span className="text-orange-400">✉</span> {profile.contact.email}
                 </a>
+                <p className="text-gray-600 dark:text-gray-400 flex items-start gap-2">
+                  <span className="text-orange-400 mt-0.5">📍</span>
+                  <span>{profile.contact.address}</span>
+                </p>
                 <a
                   href={profile.contact.kakao}
                   target="_blank"
@@ -388,6 +392,15 @@ export default function Home() {
                     <path d="M12 3C6.477 3 2 6.477 2 10.8c0 2.7 1.65 5.08 4.15 6.52l-1.06 3.93a.3.3 0 0 0 .44.33l4.6-3.06c.61.08 1.24.13 1.87.13 5.523 0 10-3.477 10-7.8C22 6.477 17.523 3 12 3z"/>
                   </svg>
                   {tx.kakao}
+                </a>
+                <a
+                  href={profile.contact.blog}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 dark:text-gray-400 hover:text-green-500 transition-colors flex items-center gap-2"
+                >
+                  <span className="text-green-500 font-bold text-xs bg-green-50 dark:bg-green-950 px-1.5 py-0.5 rounded">N</span>
+                  blog.naver.com/ideacube5
                 </a>
                 <a href={`https://${profile.contact.github}`} className="text-gray-600 dark:text-gray-400 hover:text-orange-500 transition-colors flex items-center gap-2">
                   <span className="text-orange-400">⌥</span> {profile.contact.github}
