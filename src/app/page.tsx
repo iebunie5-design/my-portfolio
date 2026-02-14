@@ -26,7 +26,7 @@ const t = {
       },
       submit: "메시지 보내기",
       sending: "전송 중...",
-      success: "메시지가 전송됐어요! 빠르게 답변드릴게요.",
+      success: "이메일 앱이 열렸어요! 전송 버튼을 눌러 완료해 주세요.",
       error: "전송에 실패했어요. 이메일로 직접 연락해 주세요.",
     },
   },
@@ -48,7 +48,7 @@ const t = {
       },
       submit: "Send Message",
       sending: "Sending...",
-      success: "Message sent! I'll get back to you soon.",
+      success: "Email app opened! Please press Send to complete.",
       error: "Failed to send. Please contact me directly via email.",
     },
   },
@@ -108,26 +108,18 @@ export default function Home() {
   const [formState, setFormState] = useState<"idle" | "sending" | "success" | "error">("idle");
   const tx = t[lang];
 
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setFormState("sending");
     const form = e.currentTarget;
-    const data = new FormData(form);
-    try {
-      const res = await fetch("https://formspree.io/f/xpwzgkje", {
-        method: "POST",
-        body: data,
-        headers: { Accept: "application/json" },
-      });
-      if (res.ok) {
-        setFormState("success");
-        form.reset();
-      } else {
-        setFormState("error");
-      }
-    } catch {
-      setFormState("error");
-    }
+    const name = (form.elements.namedItem("name") as HTMLInputElement).value;
+    const email = (form.elements.namedItem("email") as HTMLInputElement).value;
+    const message = (form.elements.namedItem("message") as HTMLTextAreaElement).value;
+    const subject = encodeURIComponent(`[포트폴리오 문의] ${name}`);
+    const body = encodeURIComponent(`이름: ${name}\n이메일: ${email}\n\n문의 내용:\n${message}`);
+    window.location.href = `mailto:iebunie5@gmail.com?subject=${subject}&body=${body}`;
+    setFormState("success");
+    form.reset();
   }
 
   const typingTexts = lang === "ko"
