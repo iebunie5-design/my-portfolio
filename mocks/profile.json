@@ -1,0 +1,39 @@
+{
+  "name": "김개발",
+  "mbti": "ENFP",
+  "title": "Frontend Developer",
+  "tagline": "아이디어를 현실로 만드는 열정적인 개발자",
+  "about": "안녕하세요! 저는 새로운 기술을 배우고 창의적인 솔루션을 만드는 것을 좋아하는 ENFP 개발자예요. 사람들의 삶을 더 편리하게 만드는 제품을 개발하는 것이 제 목표입니다.",
+  "skills": [
+    { "name": "TypeScript", "level": 90 },
+    { "name": "React / Next.js", "level": 85 },
+    { "name": "Node.js", "level": 75 },
+    { "name": "Tailwind CSS", "level": 88 },
+    { "name": "PostgreSQL", "level": 70 }
+  ],
+  "projects": [
+    {
+      "title": "TodoFlow",
+      "description": "직관적인 UX로 생산성을 높이는 할일 관리 앱",
+      "tags": ["Next.js", "TypeScript", "Prisma"],
+      "link": "#"
+    },
+    {
+      "title": "DevBlog",
+      "description": "마크다운 기반의 개발 블로그 플랫폼",
+      "tags": ["React", "MDX", "Tailwind"],
+      "link": "#"
+    },
+    {
+      "title": "ChatUI",
+      "description": "실시간 채팅 인터페이스 컴포넌트 라이브러리",
+      "tags": ["TypeScript", "WebSocket", "Storybook"],
+      "link": "#"
+    }
+  ],
+  "contact": {
+    "email": "hello@example.com",
+    "github": "github.com/myprofile",
+    "linkedin": "linkedin.com/in/myprofile"
+  }
+}
