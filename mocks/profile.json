@@ -1,38 +1,88 @@
 {
-  "name": "김개발",
+  "name": "아이디어큐브개발자",
   "mbti": "ENFP",
-  "title": "Frontend Developer",
-  "tagline": "아이디어를 현실로 만드는 열정적인 개발자",
-  "about": "안녕하세요! 저는 새로운 기술을 배우고 창의적인 솔루션을 만드는 것을 좋아하는 ENFP 개발자예요. 사람들의 삶을 더 편리하게 만드는 제품을 개발하는 것이 제 목표입니다.",
+  "title": {
+    "ko": "개발자 & 강사",
+    "en": "Developer & Instructor"
+  },
+  "tagline": {
+    "ko": "아이디어를 현실로 만들고, 그 방법을 가르칩니다",
+    "en": "Turning ideas into reality — and teaching others how"
+  },
+  "about": {
+    "ko": "코딩학원을 운영하며 인텔 AI 앱 크리에이터 양성과정에서 강의하고 있습니다. 개발과 교육, 두 가지 열정을 가지고 다음 세대 개발자들이 AI 시대에 맞는 역량을 갖출 수 있도록 돕고 있습니다.",
+    "en": "I run a coding academy and teach at the Intel AI App Creator training program. With a passion for both development and education, I help the next generation of developers build skills for the AI era."
+  },
   "skills": [
-    { "name": "TypeScript", "level": 90 },
+    { "name": "AI App Development", "level": 90 },
     { "name": "React / Next.js", "level": 85 },
-    { "name": "Node.js", "level": 75 },
-    { "name": "Tailwind CSS", "level": 88 },
-    { "name": "PostgreSQL", "level": 70 }
+    { "name": "Python", "level": 82 },
+    { "name": "TypeScript", "level": 80 },
+    { "name": "강의 & 커리큘럼 설계", "level": 95 }
+  ],
+  "teaching": [
+    {
+      "title": {
+        "ko": "인텔 AI 앱 크리에이터 양성과정",
+        "en": "Intel AI App Creator Training"
+      },
+      "role": {
+        "ko": "강사",
+        "en": "Instructor"
+      },
+      "description": {
+        "ko": "인텔과 협력하여 AI 앱 개발 역량을 갖춘 전문가 양성. 실무 중심의 프로젝트 기반 교육 진행.",
+        "en": "Training AI app development professionals in partnership with Intel. Project-based, practical curriculum."
+      },
+      "tags": ["Intel AI", "AI App", "양성과정"]
+    },
+    {
+      "title": {
+        "ko": "아이디어큐브아름/SW코딩학원",
+        "en": "IdeaCube Areum / SW Coding Academy"
+      },
+      "role": {
+        "ko": "원장 & 강사",
+        "en": "Director & Instructor"
+      },
+      "description": {
+        "ko": "웹 개발, AI 활용 등 다양한 과정을 운영. 실무 경험을 바탕으로 한 현장 밀착형 교육.",
+        "en": "Running courses in web development and AI. Hands-on, practical education based on real-world experience."
+      },
+      "tags": ["웹개발", "AI 활용", "코딩교육"]
+    }
   ],
   "projects": [
     {
-      "title": "TodoFlow",
-      "description": "직관적인 UX로 생산성을 높이는 할일 관리 앱",
+      "title": "AI App Creator 커리큘럼",
+      "description": {
+        "ko": "인텔 AI 앱 크리에이터 양성과정 전용 실습 커리큘럼 및 프로젝트 가이드",
+        "en": "Hands-on curriculum and project guide for the Intel AI App Creator program"
+      },
+      "tags": ["Intel AI", "Curriculum", "Python"],
+      "link": "#"
+    },
+    {
+      "title": "아이디어큐브 학습 플랫폼",
+      "description": {
+        "ko": "수강생 관리 및 학습 진도 추적을 위한 학원 전용 플랫폼",
+        "en": "Academy platform for student management and learning progress tracking"
+      },
       "tags": ["Next.js", "TypeScript", "Prisma"],
       "link": "#"
     },
     {
-      "title": "DevBlog",
-      "description": "마크다운 기반의 개발 블로그 플랫폼",
-      "tags": ["React", "MDX", "Tailwind"],
-      "link": "#"
-    },
-    {
-      "title": "ChatUI",
-      "description": "실시간 채팅 인터페이스 컴포넌트 라이브러리",
-      "tags": ["TypeScript", "WebSocket", "Storybook"],
+      "title": "AI 포트폴리오 빌더",
+      "description": {
+        "ko": "수강생들이 AI로 자신만의 포트폴리오를 만들 수 있는 교육용 프로젝트",
+        "en": "An educational project helping students build their own AI-powered portfolios"
+      },
+      "tags": ["AI", "Next.js", "Claude Code"],
       "link": "#"
     }
   ],
   "contact": {
-    "email": "hello@example.com",
+    "email": "iebunie5@gmail.com",
     "github": "github.com/myprofile",
     "linkedin": "linkedin.com/in/myprofile"
   }
